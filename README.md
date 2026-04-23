@@ -391,7 +391,3 @@ Each game is stored as a JSON file in `server/games/<game_id>.json`. The file co
 **CPEE** — Import the BPMN file from `cpee/` into the CPEE cockpit. Configure endpoints to route through `api.php` for backend calls and through `cpee.org/out/frames/` for UI frames.
 
 ---
-
-## License
-
-MIT
