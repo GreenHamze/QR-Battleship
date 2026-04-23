@@ -17,45 +17,50 @@ The player is greeted with a single QR code. Scanning it sends a `start` signal 
 
 ### 2. Mode selection — new game or continue
 
-![Choose Game](screenshots/ChooseGame.png)
+<img width="2149" height="1257" alt="ChooseGame" src="https://github.com/user-attachments/assets/90e8ec07-8e93-4d64-bc74-3c80aa68e165" />
+
 
 Two QR codes side by side. The left starts a fresh game; the right resumes the most recent unfinished game (if one exists). The backend tracks persisted games, so a match interrupted yesterday can be picked up today.
 
 ### 3. Game board at the start
 
-![Start of Game](screenshots/StartOfGame.png)
+<img width="2463" height="1257" alt="StartOfGame" src="https://github.com/user-attachments/assets/45f1582c-85c2-4670-99ea-b5b1b53495de" />
+
 
 The horizontal TV-optimized layout places the Enemy Fleet (scannable QR grid) on the left and the player's own fleet on the right. Every grid cell on the left is a distinct QR code encoding a coordinate (A1–F6). The status bar at the top tracks fleet health, sunk enemy ships, the legend, and the current turn.
 
 ### 4. Gameplay — early exchanges
 
-![Game Progression 1](screenshots/GameProgression1.png)
+<img width="2463" height="1257" alt="GameProgression1" src="https://github.com/user-attachments/assets/3072e9b4-d614-4d2d-8958-9ce5b2e9d274" />
+
 
 After the player scans C2 and gets a hit, the computer fires back at D1 and also hits a ship. The scanned cells on the left turn grey (miss) or red (hit); the player's own board on the right shows incoming damage.
 
 ### 5. Gameplay — a ship goes down
 
-![Game Progression 2](screenshots/GameProgression2.png)
+<img width="2463" height="1257" alt="GameProgression2" src="https://github.com/user-attachments/assets/2c21bac6-6949-412a-bbeb-bc756d31e80a" />
+
 
 The player has sunk the Destroyer (magenta cells on the enemy grid; strikethrough in the fleet list). The computer has started landing hits on the player's Cruiser.
 
 ### 6. Gameplay — mid-battle
 
-![Game Progression 3](screenshots/GameProgression3.png)
+<img width="2463" height="1257" alt="GameProgression3" src="https://github.com/user-attachments/assets/a5cf2e81-e0d4-4307-bacd-8df94d8a314f" />
+
 
 Both sides have taken significant damage. The player has sunk an enemy ship; the computer has sunk the player's Cruiser.
 
 ### 7. Victory
 
-![Game Progression 4](screenshots/GameProgression4.png)
+<img width="2463" height="1257" alt="Victory" src="https://github.com/user-attachments/assets/ff9fc77d-181d-4791-b4a8-66e35c65284c" />
+
 
 All enemy ships have been sunk. The loop exits, the end screen renders with `winner=player`.
 
-![Victory](screenshots/Victory.png)
-
 ### 8. Timeout — inactivity protection
 
-![Timed Out](screenshots/TimedOut.png)
+<img width="2463" height="1257" alt="TimedOut" src="https://github.com/user-attachments/assets/67c0d47c-d10f-4b79-84dc-6c6120f02d4e" />
+
 
 If the player stops interacting for 90 seconds, the game ends gracefully. This is implemented entirely in CPEE via a parallel heartbeat branch (see Architecture below).
 
