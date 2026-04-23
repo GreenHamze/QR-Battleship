@@ -164,7 +164,8 @@ This polling-based design avoids two problems:
 
 ### Process graph from the CPEE cockpit
 
-![CPEE Process Graph](screenshots/CPEEProcess.png)
+<img width="497" height="958" alt="ProcessGraph" src="https://github.com/user-attachments/assets/f74c425d-076e-404c-96aa-807d7dce3911" />
+
 
 This is the same process structure rendered in the CPEE cockpit. The left column is Branch 1 (gameplay — choose mode, create/load game, loop through turns); the middle column is the decision tree handling new game vs. continue vs. found-or-not-found; the right column (with the clock icon) is Branch 2, the inactivity heartbeat.
 
