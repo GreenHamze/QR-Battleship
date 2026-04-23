@@ -34,7 +34,7 @@ The horizontal TV-optimized layout places the Enemy Fleet (scannable QR grid) on
 <img width="2463" height="1257" alt="GameProgression1" src="https://github.com/user-attachments/assets/3072e9b4-d614-4d2d-8958-9ce5b2e9d274" />
 
 
-After the player scans C2 and gets a hit, the computer fires back at D1 and also hits a ship. The scanned cells on the left turn grey (miss) or red (hit); the player's own board on the right shows incoming damage.
+After the player scans D3 and gets a hit, the computer fires back at D1 and also hits a ship. The scanned cells on the left turn grey (miss) or red (hit); the player's own board on the right shows incoming damage.
 
 ### 5. Gameplay — a ship goes down
 
