@@ -10,7 +10,8 @@ Built as a TUM CPEE Praktikum project.
 
 ### 1. Start screen — scan to begin
 
-![Scan to Start](screenshots/ScanToStart.png)
+<img width="2149" height="1257" alt="ScanToStart" src="https://github.com/user-attachments/assets/5dd22cfe-71dd-4b28-8ac3-b2cef916c886" />
+
 
 The player is greeted with a single QR code. Scanning it sends a `start` signal back to CPEE, which advances the process to the mode selection screen.
 
